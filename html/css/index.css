@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header h1 {
+    float: left;
+    padding: 15px 0;
+    color: #5F994D;
+}
+
+header ul {
+    float: right;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    padding: 25px 20px;
+    display: inline-block;
+}
+
+header ul li a:hover {
+    background-color: #5F994D;
+    color: whitesmoke;
+}
+
+.active {
+    background-color: #5f994d;
+    color: whitesmoke;
+}
+
+.banner {
+    height: 60vh;
+    background-image: url('../img/earth-art.jpg');
+    background-size:cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(176, 231, 160, 0.3);
+}
+
+.banner h2 {
+    color:white;
+    z-index: 1;
+    padding: 20px 25px;
+    border: 3px solid white;
+    background-color: rgba(176, 231, 160, 0.7);
+}
+
+section {
+    padding: 50px 0;
+}
+
+section h3 {
+    text-align: center;
+    padding: 20px 0;
+    color: #5F994D;
+    margin-bottom: 20px;
+}
+
+.about {
+    padding-bottom: 100px;
+}
+
+.about p {
+    color: #5F994D;
+    word-spacing: 2px;
+    line-height: 25px;
+}
+
+.partner {
+    background-color: rgba(176, 231, 160, 0.7);
+    padding-bottom: 100px;
+}
+
+.box {
+    color: #5f994d;
+}
+
+.box::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.box .col-4 {
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    float: left;
+}
+
+.icon-wwf {
+    width: 130px;
+    height: 85px;
+    border-radius: 50%;
+    background-image: url(../img/wwf.jpg);
+    background-size:cover;
+    background-position: center;
+    margin:0 auto;
+}
+
+.box .col-4 h4 {
+    margin: 20px 0;
+}
+
+.icon-zerowaste {
+    width: 130px;
+    height: 85px;
+    border-radius: 50%;
+    background-image: url(../img/zerowaste.jpg);
+    background-size:150%;
+    background-position: center;
+    margin:0 auto;
+}
+
+.icon-greenpeace {
+    width: 130px;
+    height: 85px;
+    border-radius: 50%;
+    background-image: url(../img/greenpeace.jpg);
+    background-size:110%;
+    background-position: center;
+    margin:0 auto;
+}
+
+.icon-walhi {
+    width: 130px;
+    height: 85px;
+    border-radius: 50%;
+    background-image: url(../img/walhi.jpg);
+    background-size:105%;
+    background-position: center;
+    margin:0 auto;
+}
+
+footer {
+    padding: 30px 0;
+    background-color: #416934;
+    color:white;
+    text-align: center;
+}
